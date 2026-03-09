@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         val firstName: String = "Bobby"
-        val lastName: String = "Rizzler"
+        val lastName: String = "Bob"
         val address: String = "155 Maple Rd"
         val isMale: Boolean = true
         val dayOfBirth: Int = 9
