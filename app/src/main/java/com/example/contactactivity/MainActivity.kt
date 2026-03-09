@@ -27,12 +27,13 @@ class MainActivity : AppCompatActivity() {
         val remainder = age % 5
 
         Log.d("MainActivity",
-            " Hello, your name is bomboclaat Name: $firstName $lastName" +
-                    ",I know where you live its Address: $address, Male: $isMale," +
+            " Hello, your name is Name: $firstName $lastName" +
+                    ",Your address Address: $address, Male: $isMale," +
                     "You were born on DOB: $dayOfBirth/$monthOfBirth/$yearOfBirth"
         )
         Log.d("MainActivity",
-            msg = "Years until 100: $yearsTo100")
+            msg = "Years until 100: $yearsTo100"
+        )
 
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
