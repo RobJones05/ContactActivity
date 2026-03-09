@@ -32,7 +32,10 @@ class MainActivity : AppCompatActivity() {
                     "You were born on DOB: $dayOfBirth/$monthOfBirth/$yearOfBirth"
         )
         Log.d("MainActivity",
-            msg = "Years until 100: $yearsTo100"
+            "Years until 100: $yearsTo100",
+            "Age in months: $ageInMonths",
+            "age in days: $ageInDays",
+            "Reaminder when age is divided by 5: $remainder"
         )
 
         setContentView(R.layout.activity_main)
