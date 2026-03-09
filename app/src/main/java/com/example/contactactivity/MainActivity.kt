@@ -18,11 +18,22 @@ class MainActivity : AppCompatActivity() {
         val isMale: Boolean = true
         val dayOfBirth: Int = 9
         val monthOfBirth: Int = 5
-        val yearOfBirth: Int = 2000
+        val yearOfBirth: Int = 2005
+
+        val age = 20
+        val yearsTo100 = 100 - age
+        val ageInMonths = age * 12
+        val ageInDays = age * 365
+        val remainder = age % 5
 
         Log.d("MainActivity",
-            " Hello, your name is bomboclaat Name: $firstName $lastName,I know where you live its Address: $address, Male: $isMale,You were born on DOB: $dayOfBirth/$monthOfBirth/$yearOfBirth"
+            " Hello, your name is bomboclaat Name: $firstName $lastName" +
+                    ",I know where you live its Address: $address, Male: $isMale," +
+                    "You were born on DOB: $dayOfBirth/$monthOfBirth/$yearOfBirth"
         )
+        Log.d("MainActivity",
+            msg = "Years until 100: $yearsTo100")
+
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
